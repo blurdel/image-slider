@@ -1,27 +1,35 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box
 }
 
 body {
     font-family: Verdana, sans-serif;
-    margin: 0;
-
     height: 100vh;
     display: grid;
     place-items: center;
 }
 
 /* Slideshow container */
-.slideshow-container {
+.slider {
     width: 100%;
-    max-width: 1000px;
-    height: 800px;
+    max-width: 800px;
+    height: 500px;
     position: relative;
     overflow: hidden;
-    margin: auto;
+    border-radius: 10px;
 }
 
-.mySlides img {
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    position: absolute;
+    transition: all 0.4s;
+}
+
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -30,11 +38,10 @@ body {
 /* Next & previous buttons */
 .prev,
 .next {
-    cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 10px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
@@ -50,7 +57,7 @@ body {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -73,20 +80,17 @@ body {
     background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
+/*
 @keyframes fade {
     from { opacity: .4 }
     to { opacity: 1 }
 }
-
+*/
 /* On smaller screens, decrease text size */
+/*
 @media only screen and (max-width: 300px) {
     .prev,
     .next,
     .text { font-size: 11px }
 }
+*/
