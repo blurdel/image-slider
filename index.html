@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8" />
@@ -10,28 +10,34 @@
 </head>
 
 <body>
-    <!-- Slider container -->
+
     <div class="slider">
 
         <div class="slide">
-            <img src=".//img/cars.jpeg" alt="" />
+            <img src="./img/IMG1.JPG">
         </div>
 
         <div class="slide">
-            <img src="./img/city.jpeg" alt="" />
+            <img src="./img/IMG2.JPG" style="width:100%">
         </div>
 
         <div class="slide">
-            <img src="./img/mountain.jpeg" alt="" />
+            <img src="./img/IMG3.JPG" style="width:100%">
         </div>
 
         <div class="slide">
-            <img src="./img/night.jpeg" alt="" />
+            <img src="./img/IMG4.JPG" style="width:100%">
         </div>
 
-        <!-- Control buttons -->
-        <button class="btn btn-next">></button>
-        <button class="btn btn-prev"><</button>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
     </div>
 
     <script src="script.js"></script>
